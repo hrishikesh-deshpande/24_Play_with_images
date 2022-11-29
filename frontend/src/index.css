@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+  /* text-decoration: none; */
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #72dffe;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.feature-div {
+  margin-right: 200px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+#bg {
+  position: absolute;
+  background-image: url("../public/bg1.jpg");
+  height: 100%;
+  width: 98%;
+  margin-left: -2%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  /* opacity: 0.5; */
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  z-index: -1;
+}
+
+#heading {
+  /* font-family: Georgia, sans-serif;
+  font-size: 4em;
+  letter-spacing: -2px; */
+
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 5em;
+  letter-spacing: -2px;
+  /* border-bottom: 2px solid black; */
+  text-transform: uppercase;
+  color: #226cbf;
+}
+
+#text {
+  opacity: 1;
+}
+
+h3 {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 2em;
+  letter-spacing: -2px;
+  color: #226cbf;
+}
+
+input,
+button {
+  appearance: none;
+  /* background-color: #fafbfc; */
+  background-color: #caf0f8;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+  margin: 25px;
+  margin-top: 0;
+}
+
+input:hover,
+button:hover {
+  background-color: #f3f4f6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+input:disabled,
+button:disabled {
+  background-color: #fafbfc;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959da5;
+  cursor: default;
+}
+
+input:active,
+button:active {
+  background-color: #edeff2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+input:focus,
+button:focus {
+  outline: 1px transparent;
+}
+
+input:before,
+button:before {
+  display: none;
+}
+
+input:-webkit-details-marker,
+button:-webkit-details-marker {
+  display: none;
+}
+
+input[type="color"] {
+  padding: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  border: 2px solid #0077b6;
+}
+
+input::file-selector-button {
+  font-weight: bold;
+  color: #0077b6;
+  padding: 0.5em;
+  border: thin solid grey;
+  border-radius: 3px;
+  margin-right: 20px;
+}
